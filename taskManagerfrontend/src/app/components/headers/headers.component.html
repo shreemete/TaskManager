@@ -1,0 +1,29 @@
+<div class="header">
+    <button mat-icon-button class="example-icon" (click)="onToggle(istoggle)">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div class="title">
+        <h1>Task Manager</h1>
+    </div>
+
+    <div class="navlist">
+        <a [routerLink]="'add'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">Add task</a>
+        <a [routerLink]="'view'" routerLinkActive="active">View tasks</a>
+
+        <!-- <a [class.active]="isactive" (click)="clicked()" routerLink="">Add task</a>
+        <a [class.active]="isactive" (click)="clicked()" routerLink="view">View tasks</a> -->
+    </div>
+    <div class="login">
+        <button mat-raised-button color="warn" (click)="logoutUser()">Logout</button>
+    </div>
+</div>
+
+<div class="sidebar" [style.height]="height">
+    <ul>
+        <li [routerLink]="'add'" routerLinkActive="toggleActive" [routerLinkActiveOptions]="{exact:
+true}"><a>Add Task</a></li>
+        <li [routerLink]="'view'" routerLinkActive="toggleActive"><a>View Task</a></li>
+        <li style="background-color: red; " (click)="logoutUser()"><a style="color: #fff;">Logout</a></li>
+    </ul>
+</div>

@@ -1,0 +1,9 @@
+<p [ngClass]="classes">footers works!</p>
+
+<button (click)="btn1()">btn1</button><button (click)="btn2()">btn2</button>
+
+<div>
+    <button type="button" (click)="dec()" title="smaller">-</button>
+    <button type="button" (click)="inc()" title="bigger">+</button>
+    <span [style.font-size.px]="size">FontSize: {{size}}px</span>
+</div>

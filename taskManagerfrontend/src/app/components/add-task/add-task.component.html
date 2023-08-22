@@ -1,0 +1,19 @@
+<div class="task-box">
+    <h1>Add Task</h1>
+    <div>
+        <form #task="ngForm" class="task" (submit)="addTask(task)">
+            <mat-form-field class="example-full-width">
+                <mat-label>Task Name</mat-label>
+                <input matInput name="taskName" ngModel>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Task Details</mat-label>
+                <textarea matInput name="taskDetails" ngModel></textarea>
+            </mat-form-field>
+            <input type="hidden" name="user" [(ngModel)]="user">
+            <div class="submit">
+                <button mat-raised-button class="btn" color="primary">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="overlay">
+    <div class="popup">
+        <div class="head">
+            <h1>{{task.index+1}}. {{task.taskName}}</h1>
+            <div class="close" (click)="close()">
+                <mat-icon class="close-icon" aria-hidden="false" aria-label="Example home icon" color="red"
+                    fontIcon="close"></mat-icon>
+            </div>
+        </div>
+        <div class="details"><span>Details :</span>
+            {{task.taskDetails}}
+        </div>
+    </div>
+</div>

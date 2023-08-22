@@ -1,0 +1,29 @@
+<div class="overlay">
+    <div class="popup">
+
+        <div class="task-box">
+            <div class="head">
+                <h1>Update Task</h1>
+                <div class="close" (click)="close()">
+                    <mat-icon class="close-icon" aria-hidden="false" aria-label="Example home icon" color="red"
+                        fontIcon="close"></mat-icon>
+                </div>
+            </div>
+            <div>
+                <form [formGroup]="taskGrp" (submit)="updateTask(taskGrp)" class="task">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Task Name</mat-label>
+                        <input matInput name="taskName" formControlName="taskName">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Task Details</mat-label>
+                        <textarea matInput name="taskDetails" formControlName="taskDetails"></textarea>
+                    </mat-form-field>
+                    <div class="submit">
+                        <button mat-raised-button class="btn" color="primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
