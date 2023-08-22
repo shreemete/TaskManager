@@ -2,4 +2,4 @@
 
 
 # Register
-![My animated logo](assets/image/Screenshot1.png)
+![My animated logo](assets/Screenshot1.png)
